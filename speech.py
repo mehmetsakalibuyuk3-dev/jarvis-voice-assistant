@@ -119,14 +119,17 @@ def listen():
         time.sleep(0.05)
         
     r = sr.Recognizer()
-    r.pause_threshold = 1.5
-    r.energy_threshold = 300
-    r.dynamic_energy_threshold = True
+    r.pause_threshold = 2.0
+    r.phrase_threshold = 0.15
+    r.energy_threshold = 150
+    r.dynamic_energy_threshold = False
     
     with sr.Microphone() as source:
         if not _calibrated:
             print(Fore.YELLOW + "\n[Sistem: Mikrofon kalibrasyonu yapılıyor (1.0 sn)...]")
             r.adjust_for_ambient_noise(source, duration=1.0)
+            if r.energy_threshold > 250:
+                r.energy_threshold = 200
             _calibrated = True
             print(Fore.GREEN + f"[Sistem: Kalibrasyon tamamlandı. Eşik değeri: {r.energy_threshold:.0f}]")
             check_whisper_cache()
