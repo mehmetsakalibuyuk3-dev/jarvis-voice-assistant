@@ -1477,6 +1477,15 @@ async def main():
                 # Sohbet geçmişini sade selamlaşmalardan temiz tut
                 continue
                 
+            # --- 0ms HOW ARE YOU INTERCEPTOR ---
+            how_are_you_list = ["nasilsin", "nasilsiniz", "naber", "ne haber", "nasil gidiyor", "ne var ne yok", "keyifler nasil"]
+            speech_no_jarvis = norm_speech.replace("jarvis", "").strip()
+            if speech_no_jarvis in how_are_you_list:
+                how_are_you_reply = "Çok iyiyim Mustafa Efendim. Tüm sistemlerim kararlı ve hizmetinizde. Teşekkür ederim."
+                safe_print(Fore.CYAN + "Jarvis: " + Style.RESET_ALL + how_are_you_reply)
+                await jarvis_speak(how_are_you_reply)
+                continue
+                
             # --- 0ms SYSTEM SHUTDOWN INTERCEPTOR ---
             exit_keywords = ["sistemi kapat", "jarvis kapat", "kendine iyi bak", "cikis yap", "gorusuruz"]
             if any(kw in norm_speech for kw in exit_keywords):
