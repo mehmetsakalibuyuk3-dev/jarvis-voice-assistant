@@ -1,0 +1,18 @@
+# Python virtual environment
+.venv/
+venv/
+ENV/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Local DBs / memory files
+vector_store.json
+memory.json
+
+# Backups & temp files
+backups/
+*.log
+*.tmp

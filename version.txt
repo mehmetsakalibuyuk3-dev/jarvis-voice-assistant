@@ -1,0 +1,7 @@
+[SİSTEM DURUMU - SEVİYE 5 BAŞARIYLA TAMAMLANDI - 2 Haziran 2026]
+- Güvenli Bilgisayar ve Sistem Kontrolü (OS App & File Orchestrator) altyapısı kuruldu.
+- Whitelist korumalı 0ms Uygulama Başlatıcı (VS Code, Chrome, Spotify, Steam, Epic Games, Discord, Hesap Makinesi, Görev Yöneticisi, Dosya Gezgini) aktif.
+- Google ve YouTube arama ve site açma yönlendirmesi eklendi.
+- "YouTube'u aç" ve "Google'ı aç" gibi doğrudan web sayfası açma komutları whiteliste entegre edildi.
+- Klasördeki yerel PowerShell/Python simülasyon kodlarını çalıştırıp sonuçları sesli raporlama yeteneği eklendi.
+- Constellation (takımyıldız) parçacık bağları, yeşil olmayan sakin konuşma renk uyumları ve WebView2 cache-buster özellikleri başarıyla korunarak Seviye 5 mimarisine tamamen taşındı.
