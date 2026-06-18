@@ -1477,7 +1477,7 @@ async def main():
                 # Sohbet geçmişini sade selamlaşmalardan temiz tut
                 continue
                 
-            # --- 0ms HOW ARE YOU INTERCEPTOR ---
+            # --- 0ms  INTERCEPTOR ---
             how_are_you_list = ["nasilsin", "nasilsiniz", "naber", "ne haber", "nasil gidiyor", "ne var ne yok", "keyifler nasil"]
             speech_no_jarvis = norm_speech.replace("jarvis", "").strip()
             if speech_no_jarvis in how_are_you_list:
