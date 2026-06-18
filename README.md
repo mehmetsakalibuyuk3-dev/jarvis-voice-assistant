@@ -3,8 +3,9 @@
 JARVIS is a fully local, offline voice-controlled AI assistant. It integrates a local Large Language Model (LLM) and Embedding model with a futuristic holographic WebGL HUD (Heads-Up Display) and OS-level automation controls. 
 
 Designed for speed and offline privacy, JARVIS bypasses external API dependencies entirely by running models locally via Ollama.
-[Proje Tanıtım Videosunu İzlemek İçin Tıklayın](https://youtu.be/mUKLuC3RcMs)
+
 ---
+[Proje Tanıtım Videosunu İzlemek İçin Tıklayın](https://youtu.be/mUKLuC3RcMs)
 
 ## 🚀 Key Features
 
